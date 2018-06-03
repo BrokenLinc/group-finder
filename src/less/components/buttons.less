@@ -72,6 +72,7 @@ fieldset:disabled a.btn {
 //
 
 .btn-state(green);
+.btn-state(white);
 
 
 //
@@ -165,7 +166,6 @@ input[type="button"] {
   color: @foreground;
   background: @background;
   border-color: @border;
-  box-shadow: @btn-box-shadow;
 
   &:hover {
     color: @hover-foreground;
@@ -176,8 +176,7 @@ input[type="button"] {
   &:focus,
   &.focus {
     // Avoid using mixin so we can pass custom focus shadow properly
-    box-shadow: @btn-box-shadow,
-                0 0 0 @btn-focus-width fade(@border, 50%);
+    box-shadow: 0 0 0 @btn-focus-width fade(@border, 50%);
   }
 
   // Disabled comes first so active can properly restyle

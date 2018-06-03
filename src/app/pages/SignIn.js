@@ -4,9 +4,9 @@ import { auth } from 'app/base';
 import SignInWithGoogle from 'auth/SignInWithGoogle';
 
 const SignIn = () => (
-  <div>
+  <div className="p-content">
     <h1>Sign In</h1>
-    <SignInWithGoogle className="btn is-outline" auth={auth} />
+    <SignInWithGoogle className="btn is-green is-outline" auth={auth} />
   </div>
 );
 

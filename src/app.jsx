@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-// import 'less/style.less';
+import 'less/style.less';
 
 import preventDocumentZoom from 'utilities/preventDocumentZoom';
 import { auth } from 'app/base';

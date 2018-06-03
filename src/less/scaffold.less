@@ -45,3 +45,14 @@ body {
 .content-inner {
   background: @content-bg;
 }
+
+.route-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "full";
+
+  > * {
+    grid-area: full;
+  }
+}

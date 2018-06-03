@@ -15,16 +15,15 @@ const Menu = ({ user }) => {
   const isUserLoaded = (!user.isLoading && !!user.email);
 
   return (
-    <header className="header">
+    <header className="header p-content">
       {isUserLoaded && (
         <ul>
           <li>Welcome, {user.displayName}</li>
           <li><Link to={paths.home()}>Home</Link></li>
           <li><Link to={paths.groups()}>Groups</Link></li>
-          <button type="button" onClick={onClickSignOut}>Log out</button>
+          <button type="button" className="btn is-outline is-white" onClick={onClickSignOut}>Log out</button>
         </ul>
       )}
-      <hr />
     </header>
   );
 };
