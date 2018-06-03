@@ -3,16 +3,16 @@
 
 .perimeter {
   height: 100%;
-  position: relative;
-  overflow: hidden; // disable scrolling on the viewport...
+  // position: relative;
+  // overflow: hidden; // disable scrolling on the viewport...
 }
 .perimeter-inner {
   height: 100%;
 }
 .content {
   height: 100%;
-  overflow-y: scroll; // ... and enable scrolling on the content
-  -webkit-overflow-scrolling: touch; // restore ios momentum scrolling
+  // overflow-y: scroll; // ... and enable scrolling on the content
+  // -webkit-overflow-scrolling: touch; // restore ios momentum scrolling
 }
 .content-inner {
   min-height: 100%;
@@ -31,17 +31,17 @@
 @st-transition-duration: 0.5s;
 @st-effect-perspective: 1500px;
 
-.st-effect-enable();
-.perimeter {
-  .st-effect-scaledownpusher;
-}
+// .st-effect-enable();
+// .perimeter {
+//   .st-effect-scaledownpusher;
+// }
 
 body {
   background: @body-bg;
 }
-.st-menu {
-  background: @st-menu-bg;
-}
+// .st-menu {
+//   background: @st-menu-bg;
+// }
 .content-inner {
   background: @content-bg;
 }
