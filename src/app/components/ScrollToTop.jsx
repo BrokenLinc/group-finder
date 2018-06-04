@@ -5,7 +5,7 @@ import { withRouter } from 'react-router';
 class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
-      setTimeout(() => window.scrollTo(0, 0), 70);
+      // window.scrollTo(0, 0);
     }
   }
   render() {
