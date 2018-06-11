@@ -19,12 +19,10 @@ class Groups extends Component {
   render() {
     const { groups } = this.state;
 
-    console.log(groups);
-
     return (
       <div className="p-content">
         <h1>Groups</h1>
-        {groups && map(groups, ({ name }) => <p>{ name }</p>)}
+        {groups && map(groups, ({ name }) => <p key={name}>{ name }</p>)}
       </div>
     );
   }
