@@ -1,6 +1,6 @@
 # group-finder
 
-See the [demo site](https://landerson352.github.io/group-finder/public/).
+See the [demo site](https://groupfinder-ea3e1.firebaseapp.com).
 
 ## Contributing
 

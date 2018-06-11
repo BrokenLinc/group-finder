@@ -3,22 +3,18 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
 
 class ScrollToTop extends Component {
-  componentDidUpdate(prevProps) {
-    if (this.props.location.pathname !== prevProps.location.pathname) {
+  componentDidUpdate() {
+    if (this.props.history.action === 'PUSH') {
       window.scrollTo(0, 0);
     }
   }
   render() {
-    return this.props.children;
+    return null;
   }
 }
 
 ScrollToTop.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node),
-  ]),
-  location: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired,
 };
 
 export default withRouter(ScrollToTop);
