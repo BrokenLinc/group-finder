@@ -1,11 +1,11 @@
-import Rebase from 're-base';
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import 'firebase/database';
+import 'firebase/firestore';
 
 import config from 'app/config';
 
-const app = firebase.initializeApp(config.firebase);
+const firebaseInstance = firebase.initializeApp(config.firebase);
 
-export const auth = app.auth();
-export const base = Rebase.createClass(app.database());
+export const auth = firebaseInstance.auth();
+
+export default firebaseInstance;
