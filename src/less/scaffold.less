@@ -1,19 +1,21 @@
 // Scaffold provides a set of containers for your site
 // which help with common navbar and footer layout challenges.
-
 body {
   background: @body-bg;
 }
-.perimeter {
-  height: 100%;
+body,
+.perimeter,
+.perimeter-inner,
+.content,
+.content-inner {
+  // vertically stack layout blocks, for full-viewport-height layouts
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 .content-inner {
   background: @content-bg;
-  min-height: 100%;
-
- // vertically stack layout blocks, for full-viewport-height layouts
-  display: flex;
-  flex-flow: column;
+  min-width: @breakpoint-md; // #anti-responsive
 }
 .route-wrapper {
   display: grid;
